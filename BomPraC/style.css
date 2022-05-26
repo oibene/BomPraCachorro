@@ -1,0 +1,267 @@
+    /* RESET */
+    
+    * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    
+     :root {
+        /* VARIAVEIS*/
+        --laranja: #FF9D2E;
+        --azul: #45AAB8;
+        --bg_color: #F0F0F0;
+        --branco: #ffffff;
+        --preto: #121213;
+        --cinza: #9b9bb1;
+        --logo_font: 'Fredoka One', cursive;
+        --font: 'Josefin Sans', sans-serif;
+    }
+    
+    body {
+        background-color: var(--bg_color);
+    }
+    /* padrao texto*/
+    
+    p,
+    h1 {
+        color: var(--branco);
+        font-family: var(--font);
+        font-size: 2rem;
+    }
+    /* divisaozinha*/
+    
+    .divisao {
+        border-image: linear-gradient(to right, transparent, var(--azul), transparent);
+        border-image-slice: 1;
+        padding-bottom: 2rem;
+        border-bottom: .175rem solid transparent;
+    }
+    /* HEADER */
+    
+    header .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 5rem;
+        width: 100%;
+        border-bottom: .1rem solid var(--cinza);
+        /*divisaozinha*/
+    }
+    
+    header .logo img {
+        padding: .6rem;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+    }
+    
+    header .logo h2 {
+        color: var(--laranja);
+        font-size: 2rem;
+        font-family: var(--logo_font);
+    }
+    
+    header .logo form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    header .logo form input[type=text] {
+        border-radius: .8rem;
+        border: .13rem solid var(--cinza);
+        padding: .3rem;
+        margin-left: 3rem;
+        height: 1.5rem;
+        width: 20rem;
+        font-size: 1.2rem;
+        font-family: var(--font);
+    }
+    
+    header .logo input[type=text]:focus {
+        border: solid var(--laranja);
+        outline: none;
+    }
+    
+    header .logo form button {
+        cursor: pointer;
+    }
+    
+    header .logo form button img {
+        color: var(--laranja);
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    /* ASIDE */
+    
+    aside .container {
+        margin-top: 2rem;
+        background-color: var(--azul);
+    }
+    
+    aside .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    aside .container img {
+        height: 30rem;
+        width: 30rem;
+    }
+    
+    aside .container .text {
+        display: block;
+        align-items: center;
+        padding: 2rem;
+    }
+    
+    aside .container .text h1 {
+        margin-bottom: 1rem;
+        font-weight: 800;
+        font-size: 4rem;
+    }
+    
+    aside .container .text p {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 2rem;
+    }
+    
+    aside .container .text img,
+    main .container .text img,
+    footer .infos p img {
+        width: 4rem;
+        height: 4rem;
+    }
+    
+    aside .promocoes,
+    footer .infos {
+        /* colocar 4 objetos do mesmo tamanho/espaco/etc*/
+        display: grid;
+        gap: .3rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        /*ele fica centralizado*/
+        margin-top: 2rem;
+        margin-left: 15rem;
+        margin-right: 15rem;
+    }
+    
+    aside .promocoes p,
+    footer .infos p {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        color: var(--preto);
+        font-size: 1.5rem;
+    }
+    
+    aside .promocoes p img,
+    footer .infos p img {
+        margin-right: .5rem;
+        width: 3rem;
+        height: 3rem;
+    }
+    /* MAIN */
+    
+    main .container {
+        display: block;
+        padding: 2rem;
+    }
+    
+    main .container .text p,
+    footer .redes .text p {
+        display: flex;
+        margin-left: 40rem;
+        margin-right: 40rem;
+        padding: 1rem;
+        font-size: 2rem;
+        color: var(--laranja);
+        font-family: var(--logo_font);
+    }
+    
+    main .container .text p img {
+        margin-right: .5rem;
+    }
+    
+    main .container .racoes,
+    footer .infos p,
+    footer .redes .icones {
+        display: grid;
+        gap: 3rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding-bottom: 2rem;
+    }
+    
+    main .container .racao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: .5rem;
+        border-radius: .4rem;
+    }
+    
+    main .container .racao p {
+        font-size: 1.5rem;
+        font-weight: 800;
+        color: var(--laranja);
+    }
+    
+    main .container .racao img {
+        padding: .5rem;
+        width: 10rem;
+        height: 10rem;
+    }
+    
+    main .container .racao button {
+        cursor: pointer;
+        margin: 1rem;
+        width: 10rem;
+        height: 2.25rem;
+        color: var(--azul);
+        font-weight: 800;
+        font-family: var(--font);
+        font-size: 1.25rem;
+        border: .2rem solid var(--azul);
+        border-radius: .8rem;
+        -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+        transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    }
+    
+    main .container .racao button:hover {
+        color: var(--branco);
+        background-color: var(--azul);
+        box-shadow: 0 0 40px 40px var(--azul) inset;
+    }
+    /* FOOTER */
+    
+    footer .infos {
+        margin-left: 10rem;
+        margin-right: 10rem;
+        margin-bottom: 2rem;
+    }
+    
+    footer .infos p {
+        cursor: pointer;
+        padding: .5rem;
+        height: 5rem;
+        width: 20rem;
+        background-color: var(--azul);
+        border-radius: .8rem;
+        color: var(--branco);
+    }
+    
+    footer .infos p img {
+        margin-left: 1rem;
+    }
+    
+    footer .redes .icones {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 50rem;
+        margin-right: 50rem;
+        margin-bottom: 2rem;
+    }
