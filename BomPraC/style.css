@@ -30,7 +30,7 @@
     h1 {
         color: var(--branco);
         font-family: var(--font);
-        font-size: 2rem;
+        font-size: 1rem;
     }
     /* divisaozinha*/
     
@@ -279,14 +279,161 @@
             background-color: blue;
         }
 
+        p,
+        h1 {
+            font-size: 1rem;
+        }
+
         /*HEADER*/
-            
+        header .logo {
+            height: 3.5rem;
+        }
+        
+        header .logo img {
+            padding: .6rem;
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+        }
+        
+        header .logo h2 {
+            font-size: 1.5rem;
+        }
+        
+        /*js? quando clicar aparece modal???*/
+        header .logo form input[type=text],
+        header .logo form button img {
+            display: none
+        }
 
         /*ASIDE*/
+        
+        aside .container img {
+            height: 10rem;
+            width: 10rem;
+        }
+        
+        aside .container .text {
+            padding: 1rem;
+        }
+        
+        aside .container .text h1 {
+            font-size: 2rem;
+        }
+        
+        aside .container .text p {
+            font-size: 1rem;
+        }
+        
+        aside .container .text img,
+        main .container .text img,
+        footer .infos img,
+        footer .redes .text img{
+            width: 2rem;
+            height: 2rem;
+        }
+        
+        aside .promocoes,
+        footer .infos {
+            gap: .03rem;
+            margin-top: 2rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+        
+        aside .promocoes p,
+        footer .infos a {
+            font-size: 1.15rem;
+        }
+        
+        aside .promocoes p img,
+        footer .infos a img {
+            margin-right: .25rem;
+            width: 1.5rem;
+            height: 1.5rem;
+        }
 
         /*MAIN*/
 
+        main .container {
+            display: block;
+            padding: 1rem;
+        }
+        
+        main .container .text p,
+        footer .redes .text p {
+            display: flex;
+            margin-left: 4rem;
+            margin-right: 4rem;
+            padding: .5rem;
+            font-size: 1.5rem;
+        }
+        
+        main .container .text p img {
+            margin-right: .5rem;
+        }
+        
+        main .container .racoes,
+        footer .infos a,
+        footer .redes .icones {
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: 1fr 1fr;
+            padding-bottom: 1rem;
+        }
+        
+        main .container .racao {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: .5rem;
+            border-radius: .4rem;
+        }
+        
+        main .container .racao p {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--laranja);
+        }
+        
+        main .container .racao img {
+            padding: .5rem;
+            width: 4rem;
+            height: 4rem;
+        }
+        
+        main .container .racao button {
+            margin: 1rem;
+            width: 5rem;
+            height: 2.25rem;
+            font-size: .9rem;
+        }
+
         /*FOOTTER*/
+
+        footer .infos {
+            margin-left: 5rem;
+            margin-right: 5rem;
+            margin-bottom: 1rem;
+        }
+        
+        footer .infos a {
+            padding: .5rem;
+            height: 2.5rem;
+            width: 5rem;
+        }
+    
+        
+        footer .infos img {
+            margin-left: 1rem;
+        }
+        
+        footer .redes .icones {
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-left: 5rem;
+            margin-right: 5rem;
+            margin-bottom: 1rem;
+        }
 
     }
 
