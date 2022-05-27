@@ -274,11 +274,6 @@
 
     /* TELA MEDIA */
     @media (max-width: 1200px){
-
-        body{
-            background-color: blue;
-        }
-
         p,
         h1 {
             font-size: 1rem;
