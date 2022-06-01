@@ -20,12 +20,31 @@
         --logo_font: 'Fredoka One', cursive;
         --font: 'Josefin Sans', sans-serif;
     }
+
+    /* SCROLLBAR*/
+    ::-webkit-scrollbar {
+        width: 5px;
+      }
+      /* fundinho*/
+      ::-webkit-scrollbar-track {
+        background: var(--bg_color);
+      }
+      /* barrinha*/
+      ::-webkit-scrollbar-thumb {
+        border-radius: 1rem;
+        background: var(--azul);
+      }
+      /* segurando barrinha */
+      ::-webkit-scrollbar-thumb:hover {
+        background: var(--laranja);
+      }
+      
     
     body {
         background-color: var(--bg_color);
     }
+
     /* padrao texto*/
-    
     p,
     h1 {
         color: var(--branco);
