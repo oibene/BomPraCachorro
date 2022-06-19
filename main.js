@@ -15,3 +15,22 @@ const scrollReveal = ScrollReveal({
     `,
     { interval: 100 }
   )
+
+
+  /** SOMBRA C/ ROLAGEM DA TELA**/
+const header = document.querySelector('header')
+const navHeight = header.offsetHeight //deslocamento da altura
+function changeHeaderWhenScroll() {
+  //se o scroll passou da altura do header
+  if (window.scrollY >= navHeight) {
+    header.classList.add('scroll')
+  } else {
+    header.classList.remove('scroll')
+  }
+}
+
+//quando a tela rolar, executa as duas funções
+window.addEventListener('scroll', function () {
+    changeHeaderWhenScroll()
+    backToTop()
+  })
