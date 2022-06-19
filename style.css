@@ -70,6 +70,31 @@
         align-items: center;
     }
     
+    /*setinha pro inicio da pag*/
+    .back-to-top { 
+    position: fixed; /*independente de rolagem ele está fixo =/= do absolute*/
+    right: 1rem;
+    bottom: 1rem;
+  
+    padding: 0.5rem;
+    clip-path: circle();
+  
+    font-size: 1.5rem;
+    line-height: 0;
+  
+    visibility: hidden;
+    opacity: 0;
+  
+    transition: 0.3s;
+    transform: translateY(100%); /*faz o botão ter uma animação*/
+  }
+  
+  .back-to-top.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+    
     /* HEADER */
     header{
         position: fixed;
@@ -82,7 +107,7 @@
     /*sombrinha quando rolar a pagina*/
     header.scroll {
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
-  }
+    }
 
     header .logo {
         display: flex;
@@ -132,7 +157,8 @@
         cursor: pointer;
     }
     
-    header .logo form button img {
+    header .logo form button img,
+    .back-to-top img {
         color: var(--laranja);
         height: 2.5rem;
         width: 2.5rem;
@@ -279,14 +305,10 @@
         margin-bottom: 2rem;
     }
     
-    footer .infos a {
+    footer .infos p a {
         text-decoration: none;
         cursor: pointer;
-        padding: .5rem;
-
-        
-        height: 1000000rem;
-        width: 20rem;
+        padding: .5rem;    
 
 
         background-color: var(--azul);

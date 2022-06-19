@@ -20,7 +20,7 @@ const scrollReveal = ScrollReveal({
   /** SOMBRA C/ ROLAGEM DA TELA**/
 const header = document.querySelector('header')
 const navHeight = header.offsetHeight //deslocamento da altura
-function changeHeaderWhenScroll() {
+function mudaHeaderQuandoScroll() {
   //se o scroll passou da altura do header
   if (window.scrollY >= navHeight) {
     header.classList.add('scroll')
@@ -29,8 +29,19 @@ function changeHeaderWhenScroll() {
   }
 }
 
+
+/** BOTÃO P/ VOLTAR P/ O TOPO**/
+const backToTopButton = document.querySelector('.back-to-top')
+function backToTop() {
+  if (window.scrollY >= 560) {
+    backToTopButton.classList.add('show')
+  } else {
+    backToTopButton.classList.remove('show')
+  }
+}
+
 //quando a tela rolar, executa as duas funções
 window.addEventListener('scroll', function () {
-    changeHeaderWhenScroll()
+    mudaHeaderQuandoScroll()
     backToTop()
   })
