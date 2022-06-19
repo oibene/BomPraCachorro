@@ -7,12 +7,11 @@ const scrollReveal = ScrollReveal({
   })
   
   scrollReveal.reveal(
-    ` #home .image, #home .text,
-    #about .image, #about .text,
-    #services header, #services .card,
-    #testimonials header, #testimonials .testimonials,
-    #contact .text, #contact .links,
-    footer .brand, footer .social
+    `aside .container,
+    aside .promocoes, main .divisao,
+    main .container .text, main .container .racoes,
+    main .divisao, main .container .racoes,
+    footer .infos, footer .redes
     `,
     { interval: 100 }
   )

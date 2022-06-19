@@ -59,8 +59,22 @@
         padding-bottom: 2rem;
         border-bottom: .175rem solid transparent;
     }
-    /* HEADER */
+
+    /* centralizando*/
+    main .container .text p,
+    footer .redes .text p,
+    footer .infos {
+        display: flexbox;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
     
+    /* HEADER */
+    header{
+        display: fixed;
+    }
+
     header .logo {
         display: flex;
         align-items: center;
@@ -68,7 +82,6 @@
         height: 5rem;
         width: 100%;
         border-bottom: .1rem solid var(--cinza);
-        /*divisaozinha*/
     }
     
     header .logo img {
@@ -158,21 +171,17 @@
         width: 4rem;
         height: 4rem;
     }
-    
-    aside .promocoes,
-    footer .infos {
+    aside .promocoes{
         /* colocar 4 objetos do mesmo tamanho/espaco/etc*/
         display: grid;
         gap: .3rem;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         /*ele fica centralizado*/
+        place-items: center;
         margin-top: 2rem;
-        margin-left: 15rem;
-        margin-right: 15rem;
     }
     
-    aside .promocoes p,
-    footer .infos a {
+    aside .promocoes p {
         display: flex;
         align-items: center;
         justify-items: center;
@@ -196,8 +205,6 @@
     main .container .text p,
     footer .redes .text p {
         display: flex;
-        margin-left: 40rem;
-        margin-right: 40rem;
         padding: 1rem;
         font-size: 2rem;
         color: var(--laranja);
@@ -209,7 +216,6 @@
     }
     
     main .container .racoes,
-    footer .infos a,
     footer .redes .icones {
         display: grid;
         gap: 3rem;
@@ -260,8 +266,7 @@
     /* FOOTER */
     
     footer .infos {
-        margin-left: 10rem;
-        margin-right: 10rem;
+        display: flex;
         margin-bottom: 2rem;
     }
     
@@ -283,9 +288,7 @@
     
     footer .redes .icones {
         grid-template-columns: 1fr 1fr 1fr;
-        margin-left: 40rem;
-        margin-right: 40rem;
-        margin-bottom: 2rem;
+        place-items: center;
     }
 
 
@@ -351,8 +354,6 @@
         footer .infos {
             gap: .03rem;
             margin-top: 2rem;
-            margin-left: 1rem;
-            margin-right: 1rem;
         }
         
         aside .promocoes p,
@@ -378,8 +379,6 @@
         main .container .text p,
         footer .redes .text p {
             display: flex;
-            margin-left: 12rem;
-            margin-right: 12rem;
             padding: .5rem;
             font-size: 1.5rem;
         }
@@ -431,8 +430,6 @@
         /*FOOTTER*/
 
         footer .infos {
-            margin-left: 2rem;
-            margin-right: 2rem;
             margin-bottom: 1rem;
         }
         
@@ -444,12 +441,7 @@
         footer .infos img {
             display: none;
         }
-        
-        footer .redes .icones {
-            margin-left: 10rem;
-            margin-right: 10rem;
-            margin-bottom: 1rem;
-        }
+
 
     }
 
@@ -467,12 +459,6 @@
             padding: .5rem;
         }
         
-        aside .promocoes,
-        footer .infos {
-            margin-left: .5rem;
-            margin-right: .5rem;
-        }
-        
         aside .promocoes p,
         footer .infos a {
             font-size: 1rem;
@@ -483,8 +469,6 @@
         main .container .text p,
         footer .redes .text p {
             display: flex;
-            margin-left: 5rem;
-            margin-right: 5rem;
         }
 
         main .container .racoes,
@@ -523,19 +507,11 @@
         /*FOOTER*/
 
         footer .infos {
-            margin-left: 5rem;
-            margin-right: 5rem;
             margin-bottom: 1rem;
         }
         
         footer .infos {
             display: none;
-        }
-        
-        footer .redes .icones {
-            margin-left: 5rem;
-            margin-right: 5rem;
-            margin-bottom: 1rem;
         }
 
         footer .redes .icones img{
