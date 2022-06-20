@@ -90,6 +90,22 @@
     opacity: 1;
     transform: translateY(0);
   }
+  
+  /** Swiper **/
+.swiper-slide {
+    height: auto;
+    padding: 4rem 1rem;
+  }
+  
+  .swiper-pagination {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+  
+  /*quando estiver na pagina da bolinha ela fica com cor*/
+  .swiper-pagination-bullet-active {
+    background: var(--base-color);
+  }
     
     /* HEADER */
     header{
@@ -331,6 +347,10 @@
 
     /* TELA MEDIA */
     @media (max-width: 1200px){
+        .back-to-top.show {
+            display: none;
+        }
+
         p,
         h1 {
             font-size: 1rem;

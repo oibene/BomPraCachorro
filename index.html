@@ -81,40 +81,46 @@
             </div>
 
             <!-- div contendo os produtos -->
-            <div class="racoes">
-                <!-- objeto + cor -->
-                <form action="" class="racao">
-                    <!-- foto do objeto + nome + preço + botão -->
-                    <img src="images/racao1.png" alt="racao para cachorro Magnus">
-                    <p> Ração Magnus
-                        <p>
-                            <p>R$ 95,00</p>
-                            <button name="comprar-cao-M">Eu Quero</button>
-                </form>
+            <div class="racoes swiper-container">
+        
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
 
-                <form action="" class="racao">
-                    <img src="images/racao2.webp" alt="racao para cachorro Pedigree">
-                    <p> Ração Pedigree
-                        <p>
-                            <p>R$ 154,00</p>
-                            <button name="comprar-cao-P">Eu Quero</button>
-                </form>
+                    <!-- objeto -->
+                    <form action="" class="racao swiper-slide">
+                        <!-- foto do objeto + nome + preço + botão -->
+                        <img src="images/racao1.png" alt="racao para cachorro Magnus">
+                        <p> Ração Magnus
+                            <p>
+                                <p>R$ 95,00</p>
+                                <button name="comprar-cao-M">Eu Quero</button>
+                    </form>
 
-                <form action="" class="racao">
-                    <img src="images/racao3.webp" alt="racao para cachorro Champ">
-                    <p> Ração Champ
-                        <p>
-                            <p>R$ 110,00</p>
-                            <button name="comprar-cao-C">Eu Quero</button>
-                </form>
+                    <form action="" class="racao swiper-slide">
+                        <img src="images/racao2.webp" alt="racao para cachorro Pedigree">
+                        <p> Ração Pedigree
+                            <p>
+                                <p>R$ 154,00</p>
+                                <button name="comprar-cao-P">Eu Quero</button>
+                    </form>
 
-                <form action="" class="racao">
-                    <img src="images/racao4.png" alt="racao para cachorro Dexter">
-                    <p> Ração Dexter
-                        <p>
-                            <p>R$ 121,00</p>
-                            <button name="comprar-cao-D">Eu Quero</button>
-                </form>
+                    <form action="" class="racao swiper-slide">
+                        <img src="images/racao3.webp" alt="racao para cachorro Champ">
+                        <p> Ração Champ
+                            <p>
+                                <p>R$ 110,00</p>
+                                <button name="comprar-cao-C">Eu Quero</button>
+                    </form>
+
+                    <form action="" class="racao swiper-slide">
+                        <img src="images/racao4.png" alt="racao para cachorro Dexter">
+                        <p> Ração Dexter
+                            <p>
+                                <p>R$ 121,00</p>
+                                <button name="comprar-cao-D">Eu Quero</button>
+                    </form>
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
         <div class="divisao"></div>
@@ -230,7 +236,7 @@
     </a>
     <!-- SCRIPTS -->
     <script src="https://unpkg.com/scrollreveal"></script>
-
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
 
 </body>

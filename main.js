@@ -33,12 +33,35 @@ function mudaHeaderQuandoScroll() {
 /** BOTÃO P/ VOLTAR P/ O TOPO**/
 const backToTopButton = document.querySelector('.back-to-top')
 function backToTop() {
-  if (window.scrollY >= 560) {
+  if (window.scrollY >= 40) {
     backToTopButton.classList.add('show')
   } else {
     backToTopButton.classList.remove('show')
   }
 }
+
+
+/** CARROSSEL
+ * esse plugin é todo automatico**/
+
+//cria um obj swiper que usa de parametros uma classe e um obj (par de chaves co propriedade e valor)
+
+//slidesPerView = quantos slide a gente quer ver
+//mousewheel = rolamento mouse //keyboard = setinhas
+const swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    pagination: {
+      el: '.swiper-pagination'
+    },
+    mousewheel: true,
+    keyboard: true,
+    breakpoints: {
+      767: {
+        slidesPerView: 2,
+        setWrapperSize: true
+      }
+    }
+  })
 
 //quando a tela rolar, executa as duas funções
 window.addEventListener('scroll', function () {
