@@ -75,14 +75,12 @@
     position: fixed; /*independente de rolagem ele está fixo =/= do absolute*/
     right: 1rem;
     bottom: 1rem;
-  
-  
-    color:var(--azul);
-    border-radius: .8rem;
 
     visibility: hidden;
     opacity: 0;
-  
+
+    cursor: pointer;
+
     transition: 0.3s;
     transform: translateY(100%); /*faz o botão ter uma animação*/
   }
@@ -312,7 +310,7 @@
         border-radius: .8rem;
 
         height: 5rem;
-        width: 13rem;
+        width: 17rem;
     }
 
     footer .infos p a{
