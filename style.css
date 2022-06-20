@@ -24,24 +24,25 @@
     /* SCROLLBAR*/
     ::-webkit-scrollbar {
         width: 5px;
-      }
+    }
       /* fundinho*/
-      ::-webkit-scrollbar-track {
+    ::-webkit-scrollbar-track {
         background: var(--bg_color);
-      }
+    }
       /* barrinha*/
-      ::-webkit-scrollbar-thumb {
+    ::-webkit-scrollbar-thumb {
         border-radius: 1rem;
         background: var(--azul);
-      }
-      /* segurando barrinha */
-      ::-webkit-scrollbar-thumb:hover {
+    }
+    /* segurando barrinha */
+    ::-webkit-scrollbar-thumb:hover {
         background: var(--laranja);
-      }
+    }
       
     
     body {
         background-color: var(--bg_color);
+        overflow-x: hidden; 
     }
 
     /* padrao texto*/
@@ -83,30 +84,30 @@
 
     transition: 0.3s;
     transform: translateY(100%); /*faz o botão ter uma animação*/
-  }
-  
-  .back-to-top.show {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  /** Swiper **/
-  .swiper-slide {
-    height: auto;
-    padding: 4rem 1rem;
-  }
-  
-  .swiper-pagination {
-    width: 0.75rem;
-    height: 0.75rem;
-  }
-  
-  /*quando estiver na pagina da bolinha ela fica com cor*/
-  .swiper-pagination-bullet-active {
-    background: var(--azul);
-  }
+    }
     
+    .back-to-top.show {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    /** Swiper **/
+    .swiper-slide {
+        height: auto;
+        padding: 4rem 1rem;
+    }
+    
+    .swiper-pagination {
+        width: 0.75rem;
+        height: 0.75rem;
+    }
+    
+    /*quando estiver na pagina da bolinha ela fica com cor*/
+    .swiper-pagination-bullet-active {
+        background: var(--laranja);
+    }
+        
     /* HEADER */
     header{
         position: fixed;
