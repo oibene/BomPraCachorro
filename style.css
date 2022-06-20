@@ -92,7 +92,7 @@
   }
   
   /** Swiper **/
-.swiper-slide {
+  .swiper-slide {
     height: auto;
     padding: 4rem 1rem;
   }
@@ -104,7 +104,7 @@
   
   /*quando estiver na pagina da bolinha ela fica com cor*/
   .swiper-pagination-bullet-active {
-    background: var(--base-color);
+    background: var(--azul);
   }
     
     /* HEADER */
